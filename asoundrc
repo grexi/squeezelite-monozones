@@ -1,0 +1,239 @@
+pcm.card1 {
+type hw
+card 0
+}
+pcm.card2 {
+type hw
+card 1
+}
+pcm.card3 {
+type hw
+card 2
+}
+pcm.card4 {
+type hw
+card 3
+}
+pcm.card5 {
+type hw
+card 4
+}
+
+pcm.card1_dmix {
+ type dmix
+ ipc_key 1024
+ ipc_key_add_uid 1
+ ipc_perm 0666
+ slave {
+  pcm "card1"
+  rate 44100
+  channels 2
+ }
+ bindings {
+  0 0
+  1 1
+ }
+}
+pcm.card2_dmix {
+ type dmix
+ ipc_key 1024
+ ipc_key_add_uid 1
+ ipc_perm 0666
+ slave {
+  pcm "card2"
+  rate 44100
+  channels 2
+ }
+ bindings {
+  0 0
+  1 1
+ }
+}
+ 
+pcm.card3_dmix {
+ type dmix
+ ipc_key 1024
+ ipc_key_add_uid 1
+ ipc_perm 0666
+ slave {
+  pcm "card3"
+  rate 44100
+  channels 2
+ }
+ bindings {
+  0 0
+  1 1
+ }
+}
+
+pcm.card4_dmix {
+ type dmix
+ ipc_key 1024
+ ipc_key_add_uid 1
+ ipc_perm 0666
+ slave {
+  pcm "card4"
+  rate 44100
+  channels 2
+ }
+ bindings {
+  0 0
+  1 1
+ }
+}
+
+pcm.card5_dmix {
+ type dmix
+ ipc_key 1024
+ ipc_key_add_uid 1
+ ipc_perm 0666
+ slave {
+  pcm "card5"
+  rate 44100
+  channels 2
+ }
+ bindings {
+  0 0
+  1 1
+ }
+}
+
+pcm.mono_zone1 {
+ type plug
+ slave.pcm card1_dmix
+ slave.channels 2
+ ttable {
+  # Copy both input channels to output channel 0 (Left).
+  0.0 0.5
+  1.0 0.5
+  # Send nothing to output channel 1 (Right).
+  0.1 0
+  1.1 0
+ }
+}
+ 
+pcm.mono_zone2 {
+ type plug
+ slave.pcm card1_dmix
+ slave.channels 2
+ ttable {
+  # Send nothing to output channel 0 (Left).
+  0.0 0
+  1.0 0
+  # Copy both input channels to output channel 1 (Right).
+  0.1 0.5
+  1.1 0.5
+ }
+}
+
+pcm.mono_zone3 {
+ type plug
+ slave.pcm card2_dmix
+ slave.channels 2
+ ttable {
+  # Copy both input channels to output channel 0 (Left).
+  0.0 0.5
+  1.0 0.5
+  # Send nothing to output channel 1 (Right).
+  0.1 0
+  1.1 0
+ }
+}
+ 
+pcm.mono_zone4 {
+ type plug
+ slave.pcm card2_dmix
+ slave.channels 2
+ ttable {
+  # Send nothing to output channel 0 (Left).
+  0.0 0
+  1.0 0
+  # Copy both input channels to output channel 1 (Right).
+  0.1 0.5
+  1.1 0.5
+ }
+}
+
+pcm.mono_zone5 {
+ type plug
+ slave.pcm card3_dmix
+ slave.channels 2
+ ttable {
+  # Copy both input channels to output channel 0 (Left).
+  0.0 0.5
+  1.0 0.5
+  # Send nothing to output channel 1 (Right).
+  0.1 0
+  1.1 0
+ }
+}
+ 
+pcm.mono_zone6 {
+ type plug
+ slave.pcm card3_dmix
+ slave.channels 2
+ ttable {
+  # Send nothing to output channel 0 (Left).
+  0.0 0
+  1.0 0
+  # Copy both input channels to output channel 1 (Right).
+  0.1 0.5
+  1.1 0.5
+ }
+}
+
+pcm.mono_zone7 {
+ type plug
+ slave.pcm card4_dmix
+ slave.channels 2
+ ttable {
+  # Copy both input channels to output channel 0 (Left).
+  0.0 0.5
+  1.0 0.5
+  # Send nothing to output channel 1 (Right).
+  0.1 0
+  1.1 0
+ }
+}
+ 
+pcm.mono_zone8 {
+ type plug
+ slave.pcm card4_dmix
+ slave.channels 2
+ ttable {
+  # Send nothing to output channel 0 (Left).
+  0.0 0
+  1.0 0
+  # Copy both input channels to output channel 1 (Right).
+  0.1 0.5
+  1.1 0.5
+ }
+}
+
+pcm.mono_zone9 {
+ type plug
+ slave.pcm card5_dmix
+ slave.channels 2
+ ttable {
+  # Copy both input channels to output channel 0 (Left).
+  0.0 0.5
+  1.0 0.5
+  # Send nothing to output channel 1 (Right).
+  0.1 0
+  1.1 0
+ }
+}
+ 
+pcm.mono_zone10 {
+ type plug
+ slave.pcm card5_dmix
+ slave.channels 2
+ ttable {
+  # Send nothing to output channel 0 (Left).
+  0.0 0
+  1.0 0
+  # Copy both input channels to output channel 1 (Right).
+  0.1 0.5
+  1.1 0.5
+ }
+}

@@ -1,0 +1,340 @@
+state.Device {
+	control.1 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Mic Playback Switch'
+		value false
+	}
+	control.2 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 127'
+		comment.dbmin 0
+		comment.dbmax 2381
+		iface MIXER
+		name 'Mic Playback Volume'
+		value 0
+	}
+	control.3 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Speaker Playback Switch'
+		value true
+	}
+	control.4 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 2
+		comment.range '0 - 151'
+		comment.dbmin -2837
+		comment.dbmax -6
+		iface MIXER
+		name 'Speaker Playback Volume'
+		value.0 134
+		value.1 134
+	}
+	control.5 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Mic Capture Switch'
+		value true
+	}
+	control.6 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 16'
+		comment.dbmin 0
+		comment.dbmax 2381
+		iface MIXER
+		name 'Mic Capture Volume'
+		value 0
+	}
+	control.7 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Auto Gain Control'
+		value true
+	}
+}
+state.Device_1 {
+	control.1 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Mic Playback Switch'
+		value false
+	}
+	control.2 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 127'
+		comment.dbmin 0
+		comment.dbmax 2381
+		iface MIXER
+		name 'Mic Playback Volume'
+		value 0
+	}
+	control.3 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Speaker Playback Switch'
+		value true
+	}
+	control.4 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 2
+		comment.range '0 - 151'
+		comment.dbmin -2837
+		comment.dbmax -6
+		iface MIXER
+		name 'Speaker Playback Volume'
+		value.0 135
+		value.1 135
+	}
+	control.5 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Mic Capture Switch'
+		value true
+	}
+	control.6 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 16'
+		comment.dbmin 0
+		comment.dbmax 2381
+		iface MIXER
+		name 'Mic Capture Volume'
+		value 0
+	}
+	control.7 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Auto Gain Control'
+		value true
+	}
+}
+state.Device_2 {
+	control.1 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Mic Playback Switch'
+		value false
+	}
+	control.2 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 127'
+		comment.dbmin 0
+		comment.dbmax 2381
+		iface MIXER
+		name 'Mic Playback Volume'
+		value 0
+	}
+	control.3 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Speaker Playback Switch'
+		value true
+	}
+	control.4 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 2
+		comment.range '0 - 151'
+		comment.dbmin -2837
+		comment.dbmax -6
+		iface MIXER
+		name 'Speaker Playback Volume'
+		value.0 134
+		value.1 134
+	}
+	control.5 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Mic Capture Switch'
+		value true
+	}
+	control.6 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 16'
+		comment.dbmin 0
+		comment.dbmax 2381
+		iface MIXER
+		name 'Mic Capture Volume'
+		value 0
+	}
+	control.7 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Auto Gain Control'
+		value true
+	}
+}
+state.Device_3 {
+	control.1 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Mic Playback Switch'
+		value false
+	}
+	control.2 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 127'
+		comment.dbmin 0
+		comment.dbmax 2381
+		iface MIXER
+		name 'Mic Playback Volume'
+		value 0
+	}
+	control.3 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Speaker Playback Switch'
+		value true
+	}
+	control.4 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 2
+		comment.range '0 - 151'
+		comment.dbmin -2837
+		comment.dbmax -6
+		iface MIXER
+		name 'Speaker Playback Volume'
+		value.0 134
+		value.1 134
+	}
+	control.5 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Mic Capture Switch'
+		value true
+	}
+	control.6 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 16'
+		comment.dbmin 0
+		comment.dbmax 2381
+		iface MIXER
+		name 'Mic Capture Volume'
+		value 0
+	}
+	control.7 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Auto Gain Control'
+		value true
+	}
+}
+state.Device_4 {
+	control.1 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Mic Playback Switch'
+		value false
+	}
+	control.2 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 127'
+		comment.dbmin 0
+		comment.dbmax 2381
+		iface MIXER
+		name 'Mic Playback Volume'
+		value 0
+	}
+	control.3 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Speaker Playback Switch'
+		value true
+	}
+	control.4 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 2
+		comment.range '0 - 151'
+		comment.dbmin -2837
+		comment.dbmax -6
+		iface MIXER
+		name 'Speaker Playback Volume'
+		value.0 134
+		value.1 134
+	}
+	control.5 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Mic Capture Switch'
+		value true
+	}
+	control.6 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 16'
+		comment.dbmin 0
+		comment.dbmax 2381
+		iface MIXER
+		name 'Mic Capture Volume'
+		value 0
+	}
+	control.7 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Auto Gain Control'
+		value true
+	}
+}
